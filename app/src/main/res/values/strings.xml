@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <string name="metric">metric</string>
+    <string name="imperial">imperial</string>
+    <string name="enter_weight_in_kg">введите вес в килограммах</string>
+    <string name="enter_height_in_sm">введите рост в сантиметрах</string>
+    <string name="enter_weight_in_ft">введите вес в фунтах</string>
+    <string name="enter_height_in_inch">введите рост в дюймах</string>
+    <string name="wrong_input">неправильный ввод данных</string>
+    <string name="calc_IMT">Узнать ИМТ</string>
+    <string name="your_BMI">"Ваш ИМТ "</string>
 </resources>
