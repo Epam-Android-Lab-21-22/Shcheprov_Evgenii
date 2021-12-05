@@ -1,18 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_gradient"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/buttonShadow"
+        android:text="@string/shadow"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_width="@dimen/standart_button_width"
+        android:layout_height="@dimen/standart_button_height"
+        app:layout_constraintEnd_toStartOf="@id/buttonTranslate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="parent"
+        android:stateListAnimator="@animator/button_shadow_state_animator" />
+
+    <Button
+        android:id="@+id/buttonTranslate"
+        android:text="@string/translation"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_width="@dimen/standart_button_width"
+        android:layout_height="@dimen/standart_button_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonShadow"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+
+        android:id="@+id/buttonDisappearance"
+        android:text="@string/disappearance"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_width="@dimen/standart_button_width"
+        android:layout_height="@dimen/standart_button_height"
+        app:layout_constraintEnd_toStartOf="@id/buttonScaleUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/buttonShadow" />
+
+    <Button
+        android:id="@+id/buttonScaleUp"
+        android:text="@string/scaleUp"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_width="@dimen/standart_button_width"
+        android:layout_height="@dimen/standart_button_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonDisappearance"
+        app:layout_constraintTop_toBottomOf="@id/buttonTranslate" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/buttonMotionLayout"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        app:layout_constraintTop_toBottomOf="@id/buttonScaleUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/scene_button_translation"
+        tools:showPaths="true">
+
+        <Button
+            android:id="@+id/transformButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="@string/swipe"/>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/editTextMotionLayout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toBottomOf="@id/buttonMotionLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/scene_edittext_rotation"
+        tools:showPaths="true">
+
+        <EditText
+
+            android:id="@+id/rotationEditText"
+            android:hint="@string/enter_the_text"
+            android:layout_marginTop="@dimen/standart_margin_top"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:textSize="20sp"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonMotionLayout" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <Button
+        android:id="@+id/rotateEditTextButton"
+        android:text="@string/vzhuh"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_width="@dimen/standart_button_width"
+        android:layout_height="@dimen/standart_button_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextMotionLayout" />
+
+    <TextView
+        android:text="@string/buttonClicks"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:textSize="20sp"
+        android:id="@+id/buttonClicksTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rotateEditTextButton" />
+
+    <TextView
+        android:text="@string/characterEnters"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_marginTop="@dimen/standart_margin_top"
+        android:textSize="20sp"
+        android:id="@+id/CharacterEntersTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonClicksTextView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

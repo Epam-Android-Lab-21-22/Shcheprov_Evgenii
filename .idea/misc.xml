@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/background_gradient.xml" value="0.14444444444444443" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/button_selector.xml" value="0.125" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/button_state_animator.xml" value="0.125" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/button_state_pressed.xml" value="0.125" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/button_state_unpressed.xml" value="0.125" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/xml/scene_01.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/xml/scene_edittext_rotation.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
