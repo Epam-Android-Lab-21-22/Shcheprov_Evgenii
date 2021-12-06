@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shcheprov_homeworks</string>
+    <string name="shadow">тень</string>
+    <string name="translation">движение</string>
+    <string name="disappearance">исчезновение</string>
+    <string name="scaleUp">увеличение</string>
+    <string name="swipe">свайп</string>
+    <string name="enter_the_text">введите текст</string>
+    <string name="vzhuh">ВЖУХ!</string>
+    <string name="buttonClicks">раз на кнопки нажато:\t</string>
+    <string name="characterEnters">введено символов:\t</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+
+        motion:constraintSetEnd="@+id/end">
+        <OnSwipe
+            motion:touchAnchorId="@+id/transformButton"
+            motion:touchAnchorSide="right"
+            motion:dragDirection="dragRight">
+        </OnSwipe>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/transformButton"
+            android:layout_width="@dimen/standart_button_width"
+            android:layout_height="@dimen/standart_button_height"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            >
+
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/purple_500" />
+
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/transformButton"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/teal_700" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <string name="shadow">shadow</string>
+    <string name="translation">translation</string>
+    <string name="disappearance">disappearance</string>
+    <string name="scaleUp">scaleUp</string>
+    <string name="swipe">swipe</string>
+    <string name="enter_the_text">enter the text</string>
+    <string name="vzhuh">vzhuh!</string>
+    <string name="buttonClicks">button clicks:\t</string>
+    <string name="characterEnters">character enters:\t</string>
 </resources>
