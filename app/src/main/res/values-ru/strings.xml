@@ -7,6 +7,6 @@
     <string name="swipe">свайп</string>
     <string name="enter_the_text">введите текст</string>
     <string name="vzhuh">ВЖУХ!</string>
-    <string name="buttonClicks">раз на кнопки нажато: </string>
-    <string name="characterEnters">введено символов: </string>
+    <string name="buttonClicks">раз на кнопки нажато:\t</string>
+    <string name="characterEnters">введено символов:\t</string>
 </resources>
