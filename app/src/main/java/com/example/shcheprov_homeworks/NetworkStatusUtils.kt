@@ -41,7 +41,6 @@ fun subscribeNetworkStatusApiN(context: Context) {
                         )
 
                     )
-                    Log.d("DEBUG","int ok")
                 }
 
                 override fun onLost(network: Network) {
@@ -52,7 +51,6 @@ fun subscribeNetworkStatusApiN(context: Context) {
                             false
                         )
                     )
-                    Log.d("DEBUG","not ok")
                 }
             })
     }
