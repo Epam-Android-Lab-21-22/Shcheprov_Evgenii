@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FeatureActivity">
 
     <Button
-        android:id="@+id/switchToFeatureActivityButton"
+        android:id="@+id/startCameraButton"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:textSize="20sp"
-        android:text="@string/let_s_take_pictures"
+        android:text="@string/need_permissons"
         android:textColor="@color/black"
+        android:enabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
