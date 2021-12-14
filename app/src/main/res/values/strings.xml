@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <string name="no_internet_connection">no internet connection</string>
+    <string name="need_permissons">need permissions</string>
+    <string name="camera_permissons_explain">to use the app, you need to accept camera permission</string>
+    <string name="ok">ok</string>
+    <string name="you_denied_permisson">you denied permisson</string>
+    <string name="i_change_my_mind">i change my mind</string>
+    <string name="i_understand">i understand</string>
+    <string name="let_s_take_pictures">let\'s take pictures!</string>
+    <string name="turn_on_camera">turn on camera</string>
 </resources>
