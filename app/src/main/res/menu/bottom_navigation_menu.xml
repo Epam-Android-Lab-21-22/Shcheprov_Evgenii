@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_red"
+        android:enabled="true"
+        android:icon="@drawable/baseline_rocket_launch_black_36dp"
+        android:title="@string/red"/>
+    <item
+        android:id="@+id/fragment_green"
+        android:enabled="true"
+        android:icon="@drawable/baseline_pan_tool_alt_black_36dp"
+        android:title="@string/green"/>
+    <item
+        android:id="@+id/fragment_blue"
+        android:enabled="true"
+        android:icon="@drawable/baseline_next_plan_black_36dp"
+        android:title="@string/blue"/>
+</menu>
