@@ -1,9 +1,9 @@
-package com.example.shcheprov_homeworks
+package com.example.shcheprov_homeworks.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shcheprov_homeworks.LeftFragmentRecyclerViewItem
 import com.example.shcheprov_homeworks.databinding.FragmentLeftDefaultItemBinding
 import com.example.shcheprov_homeworks.databinding.FragmentLeftRemovableItemBinding
 import com.example.shcheprov_homeworks.databinding.FragmentLeftTitleItemBinding
@@ -17,14 +17,14 @@ class LeftFragmentRecyclerViewAdapter :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when(viewType){
-            leftItemViewType.TYPE_TITLE_ITEM.numberType->TitleViewHolder(
+            leftItemViewType.TYPE_TITLE_ITEM.numberType-> TitleViewHolder(
                 FragmentLeftTitleItemBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
-           leftItemViewType.TYPE_DEFAULT_ITEM.numberType->DefaultViewHolder(
+           leftItemViewType.TYPE_DEFAULT_ITEM.numberType-> DefaultViewHolder(
                FragmentLeftDefaultItemBinding.inflate(
                    LayoutInflater.from(parent.context),
                    parent,

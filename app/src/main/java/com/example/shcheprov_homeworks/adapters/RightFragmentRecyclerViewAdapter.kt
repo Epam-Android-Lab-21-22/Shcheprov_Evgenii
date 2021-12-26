@@ -1,4 +1,4 @@
-package com.example.shcheprov_homeworks
+package com.example.shcheprov_homeworks.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

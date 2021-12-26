@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/fragment_left"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_perm_media_black_24dp"
         android:title="@string/left" />
     <item
         android:id="@+id/fragment_right"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_group_work_black_24dp"
         android:title="@string/right" />
 </menu>
