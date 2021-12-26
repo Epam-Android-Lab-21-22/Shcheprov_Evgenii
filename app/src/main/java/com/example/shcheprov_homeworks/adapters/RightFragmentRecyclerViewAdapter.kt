@@ -34,6 +34,7 @@ class RightFragmentRecyclerViewAdapter :
     fun addItem(item:RightFragmentRecyclerViewItem){
         items.add(item)
         notifyItemInserted(itemCount)
+
     }
 
     fun updateList(list: List<RightFragmentRecyclerViewItem>) {
@@ -45,8 +46,10 @@ class RightFragmentRecyclerViewAdapter :
     inner class ViewHolder(private val binding: FragmentRightItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: RightFragmentRecyclerViewItem) {
-            binding.rightItemImageView.setImageDrawable(item.icon)
-            binding.rightItemTextView.text=item.text
+            binding.apply {
+                rightItemImageView.setImageDrawable(item.icon)
+                rightItemTextView.text=item.text
+            }
         }
     }
 

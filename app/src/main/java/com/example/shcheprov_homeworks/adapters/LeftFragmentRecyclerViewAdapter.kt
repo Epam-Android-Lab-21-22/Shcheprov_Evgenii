@@ -2,6 +2,7 @@ package com.example.shcheprov_homeworks
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shcheprov_homeworks.databinding.FragmentLeftDefaultItemBinding
 import com.example.shcheprov_homeworks.databinding.FragmentLeftRemovableItemBinding
@@ -60,6 +61,7 @@ class LeftFragmentRecyclerViewAdapter :
         notifyDataSetChanged()
     }
 
+
     class TitleViewHolder(private val binding: FragmentLeftTitleItemBinding) :
         RecyclerView.ViewHolder(binding.root),LeftViewHolder {
         override fun bind(item: LeftFragmentRecyclerViewItem) {
@@ -74,6 +76,7 @@ class LeftFragmentRecyclerViewAdapter :
                 buttonRemoveItem.setOnClickListener {
                     items.removeAt(adapterPosition)
                     notifyItemRemoved(adapterPosition)
+
                 }
             }
         }
