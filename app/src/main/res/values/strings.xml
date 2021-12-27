@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="add_item">add item</string>
+
+    <string-array name="phrases">
+        <item>текст 1</item>
+        <item>текст 2</item>
+        <item>текст 3</item>
+        <item>текст 4</item>
+    </string-array>
+
 </resources>
