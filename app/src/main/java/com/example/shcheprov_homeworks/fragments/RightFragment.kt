@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.shcheprov_homeworks.R
 import com.example.shcheprov_homeworks.adapters.RightFragmentRecyclerViewAdapter
 import com.example.shcheprov_homeworks.databinding.FragmentRightBinding
@@ -27,9 +28,12 @@ class RightFragment : Fragment() {
             layoutManager = GridLayoutManager(context, 4)
             adapter = recyclerViewAdapter
         }
+        initRecyclerView(recyclerView)
+        return binding.root
+    }
 
+    private fun initRecyclerView(recyclerView: RecyclerView) {
         binding.addNewItemButton.setOnClickListener {
-
             val icons = requireContext().resources.obtainTypedArray(R.array.icons)
             val strings = requireContext().resources.getStringArray(R.array.phrases)
             val item = icons.getDrawable(Random.nextInt(icons.length()))?.let {
@@ -37,16 +41,11 @@ class RightFragment : Fragment() {
                     it, strings[Random.nextInt(strings.size)]
                 )
             }
-            item?.let { recyclerViewAdapter.addItem(it)
+            item?.let {
+                recyclerViewAdapter.addItem(it)
             }
-            recyclerView.scrollToPosition(recyclerViewAdapter.itemCount-1)
+            recyclerView.scrollToPosition(recyclerViewAdapter.itemCount - 1)
         }
-        return binding.root
-    }
-
-    private fun initRecyclerView() {
-
-
 
     }
 

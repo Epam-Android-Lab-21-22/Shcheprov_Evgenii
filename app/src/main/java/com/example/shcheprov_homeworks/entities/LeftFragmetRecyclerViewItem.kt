@@ -1,5 +1,3 @@
-package com.example.shcheprov_homeworks
+package com.example.shcheprov_homeworks.entities
 
-import com.example.shcheprov_homeworks.entities.leftItemViewType
-
-data class LeftFragmentRecyclerViewItem (val text:String, val viewType: leftItemViewType)
+data class LeftFragmentRecyclerViewItem (val text:String, val viewType: LeftItemViewType)

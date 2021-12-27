@@ -31,24 +31,19 @@ class RightFragmentRecyclerViewAdapter :
     override fun getItemCount(): Int {
         return items.count()
     }
-    fun addItem(item:RightFragmentRecyclerViewItem){
+
+    fun addItem(item: RightFragmentRecyclerViewItem) {
         items.add(item)
         notifyItemInserted(itemCount)
 
     }
 
-    fun updateList(list: List<RightFragmentRecyclerViewItem>) {
-        items.clear()
-        items.addAll(list)
-        notifyDataSetChanged()
-    }
-
-    inner class ViewHolder(private val binding: FragmentRightItemBinding) :
+    class ViewHolder(private val binding: FragmentRightItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: RightFragmentRecyclerViewItem) {
             binding.apply {
                 rightItemImageView.setImageDrawable(item.icon)
-                rightItemTextView.text=item.text
+                rightItemTextView.text = item.text
             }
         }
     }
