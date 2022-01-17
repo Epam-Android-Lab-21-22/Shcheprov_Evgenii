@@ -1,19 +1,18 @@
-package com.example.shcheprov_homeworks.adapters
+package com.example.shcheprov_homeworks.leftscreen.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.shcheprov_homeworks.entities.LeftFragmentRecyclerViewItem
 import com.example.shcheprov_homeworks.databinding.FragmentLeftDefaultItemBinding
 import com.example.shcheprov_homeworks.databinding.FragmentLeftRemovableItemBinding
 import com.example.shcheprov_homeworks.databinding.FragmentLeftTitleItemBinding
-import com.example.shcheprov_homeworks.entities.LeftViewHolder
-import com.example.shcheprov_homeworks.entities.LeftItemViewType
+import com.example.shcheprov_homeworks.leftscreen.entities.LeftFragmentRecyclerViewItem
+import com.example.shcheprov_homeworks.leftscreen.entities.LeftItemViewType
 
-class LeftFragmentRecyclerViewAdapter :
+class LeftScreenRecyclerViewAdapter(private val deleteItem: (Int) -> Unit) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val items: MutableList<LeftFragmentRecyclerViewItem> = mutableListOf()
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
             LeftItemViewType.TYPE_TITLE_ITEM.numberType -> TitleViewHolder(
@@ -35,7 +34,7 @@ class LeftFragmentRecyclerViewAdapter :
                     LayoutInflater.from(parent.context),
                     parent,
                     false
-                )
+                ), deleteItem = deleteItem
             )
             else -> throw IllegalStateException("WRONG VIEW TYPE")
         }
@@ -54,9 +53,11 @@ class LeftFragmentRecyclerViewAdapter :
     }
 
     fun updateList(list: List<LeftFragmentRecyclerViewItem>) {
+        val diffResult = DiffUtil.calculateDiff(LeftScreenListDiffUtilCallback(items, list))
         items.clear()
         items.addAll(list)
-        notifyDataSetChanged()
+        diffResult.dispatchUpdatesTo(this)
+
     }
 
     class TitleViewHolder(private val binding: FragmentLeftTitleItemBinding) :
@@ -66,14 +67,16 @@ class LeftFragmentRecyclerViewAdapter :
         }
     }
 
-    inner class RemovableViewHolder(private val binding: FragmentLeftRemovableItemBinding) :
+    inner class RemovableViewHolder(
+        private val binding: FragmentLeftRemovableItemBinding,
+        private val deleteItem: (Int) -> Unit
+    ) :
         RecyclerView.ViewHolder(binding.root), LeftViewHolder {
         override fun bind(item: LeftFragmentRecyclerViewItem) {
             binding.apply {
                 removableItemTextView.text = item.text
                 buttonRemoveItem.setOnClickListener {
-                    items.removeAt(adapterPosition)
-                    notifyItemRemoved(adapterPosition)
+                    deleteItem(adapterPosition)
                 }
             }
         }

@@ -5,11 +5,11 @@
     <string name="right">right</string>
     <string name="add_item">add item</string>
 
-    <string-array name="phrases">
-        <item>текст 1</item>
-        <item>текст 2</item>
-        <item>текст 3</item>
-        <item>текст 4</item>
-    </string-array>
+
+    <string name="phrase_1">текст 1</string>
+    <string name="phrase_2">текст 2</string>
+    <string name="phrase_3">текст 3</string>
+    <string name="phrase_4">текст 4</string>
+
 
 </resources>

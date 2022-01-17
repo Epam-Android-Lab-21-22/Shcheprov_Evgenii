@@ -1,14 +1,13 @@
 package com.example.shcheprov_homeworks
 
 import android.os.Bundle
-import android.util.Log
+import android.os.PersistableBundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.commit
 import com.example.shcheprov_homeworks.databinding.ActivityMainBinding
-import com.example.shcheprov_homeworks.entities.Lists
-import com.example.shcheprov_homeworks.fragments.LeftFragment
-import com.example.shcheprov_homeworks.fragments.RightFragment
+import com.example.shcheprov_homeworks.leftscreen.view.LeftFragment
+import com.example.shcheprov_homeworks.rightscreen.view.RightFragment
 
 class MainActivity : FragmentActivity() {
     private var leftFragment = LeftFragment()
@@ -22,9 +21,6 @@ class MainActivity : FragmentActivity() {
                 add(R.id.fragment_container, leftFragment)
                 setReorderingAllowed(true)
             }
-
-            leftFragment.recyclerViewAdapter.updateList(Lists.leftListExample)
-
         }
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
