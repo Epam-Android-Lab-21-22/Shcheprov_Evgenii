@@ -9,6 +9,7 @@
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/drawable/recyclerview_item_divider.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/activity_feature.xml" value="0.1" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/activity_main.xml" value="0.13872832369942195" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/district_recyclerview_item.xml" value="0.1" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_blue.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_green.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_left.xml" value="0.1" />
@@ -19,7 +20,11 @@
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_red.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_right.xml" value="0.22" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_right_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/fragment_sights.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/sights_recyclerview_removable_item.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/sights_recyclerview_title_item.xml" value="0.1" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/snackbar.xml" value="0.1" />
+        <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/layout/visits_recyclerview_default_item.xml" value="0.1" />
         <entry key="..\:/Users/Evgeny/AndroidStudioProjects/Shcheprov_homeworks/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>

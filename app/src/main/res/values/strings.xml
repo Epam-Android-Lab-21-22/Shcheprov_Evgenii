@@ -1,15 +1,17 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="left">left</string>
-    <string name="right">right</string>
-    <string name="add_item">add item</string>
+    <string name="left">достопримечательности</string>
+    <string name="right">районы</string>
+    <string name="add_item">добавить район</string>
 
-
-    <string name="phrase_1">текст 1</string>
-    <string name="phrase_2">текст 2</string>
-    <string name="phrase_3">текст 3</string>
-    <string name="phrase_4">текст 4</string>
-
+    <string name="avtozavodskii">Автозаводский</string>
+    <string name="kanavinskii">Канавинский</string>
+    <string name="leninskii">Ленинский</string>
+    <string name="moskovskii">Московский</string>
+    <string name="nijegorodskii">Нижегородский</string>
+    <string name="priokskii">Приокский</string>
+    <string name="sormovskii">Сормовский</string>
+    <string name="sovetskii">Советский</string>
 
 </resources>
