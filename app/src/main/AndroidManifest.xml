@@ -3,14 +3,16 @@
     package="com.example.shcheprov_homeworks">
 
     <application
+        android:name=".common.MainApp"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shcheprov_homeworks">
         <activity
-            android:name=".MainActivity"
+            android:name=".common.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
