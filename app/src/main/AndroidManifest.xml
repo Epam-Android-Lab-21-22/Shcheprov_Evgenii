@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shcheprov_homeworks">
         <activity
-            android:theme="@style/Theme.AppSplash"
+
             android:name=".splashscreen.LoadingScreenActivity"
             android:exported="true">
         <intent-filter>
