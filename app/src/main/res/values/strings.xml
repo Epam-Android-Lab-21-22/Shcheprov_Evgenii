@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite_songs">избранные песни</string>
+    <string name="performer">исполнитель: </string>
+    <string name="album">альбом: </string>
+    <string name="release">год: </string>
+    <string name="genre">жанр: </string>
+    <string name="text">текст:\n</string>
+    <string name="idDefaultValue">default</string>
 </resources>

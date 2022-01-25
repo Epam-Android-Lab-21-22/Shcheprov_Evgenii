@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentFavoriteSongs">
+    <fragment
+        android:id="@+id/fragmentFavoriteSongs"
+        android:name="com.example.shcheprov_homeworks.favoritesongsscreen.FragmentFavoriteSongs"
+        android:label="fragment_favorite_songs"
+        tools:layout="@layout/fragment_favorite_songs" >
+        <action
+            android:id="@+id/action_fragmentFavoriteSongs_to_fragmentSongInfo"
+            app:destination="@id/fragmentSongInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSongInfo"
+        android:name="com.example.shcheprov_homeworks.songinfoscreen.FragmentSongInfo"
+        android:label="fragment_song_info"
+        tools:layout="@layout/fragment_song_info" />
+</navigation>
