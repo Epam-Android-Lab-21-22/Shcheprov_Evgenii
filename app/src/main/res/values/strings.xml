@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Shcheprov_homeworks</string>
+    <string name="shared_preferences">shared prefs</string>
+    <string name="internal_storage">internal</string>
+    <string name="external_storage">external</string>
+    <string name="data_base">data base</string>
+    <string name="save">save</string>
+    <string name="load">load</string>
+    <string name="write_error">write error</string>
 </resources>
